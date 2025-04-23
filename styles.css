@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(135deg, #ff1493, #ff69b4); /* गुलाबी रोमांटिक ग्रेडिएंट */
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+#threejs-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.heading {
+    font-size: 5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+    animation: fadeIn 2s ease-in;
+}
+
+.message {
+    font-size: 2rem;
+    margin: 30px 0;
+    animation: fadeIn 3s ease-in;
+}
+
+.love-message {
+    margin: 50px 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.love-message h2 {
+    font-size: 3rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.gallery-img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
+.add-photo-section {
+    margin: 50px 0;
+}
+
+.add-photo-section input {
+    margin: 15px;
+}
+
+.love-stories {
+    margin: 60px 0;
+}
+
+.love-stories h3 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-top: 30px;
+}
+
+.love-stories p {
+    font-size: 1.6rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.timeline {
+    margin: 60px 0;
+    position: relative;
+    padding: 30px 0;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    margin: 25px auto;
+    width: 85%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.timeline-item h4 {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.final-message {
+    margin: 50px 0;
+}
+
+.final-message h2 {
+    font-size: 3.5rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.share-btn {
+    margin: 40px 0;
+    padding: 20px 40px;
+    font-size: 1.8rem;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
